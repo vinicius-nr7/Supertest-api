@@ -1,6 +1,8 @@
 const request = require("supertest");
 const ApiUrl = "https://restful-booker.herokuapp.com";
 
+jest.setTimeout(20000);
+
 describe("POST e GET reservas", () => {
     it("cadastrar uma reserva e validar o ID", async () => {
         const newBooking = {

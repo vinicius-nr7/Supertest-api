@@ -1,6 +1,8 @@
 const request = require("supertest");
 const ApiUrl = "https://restful-booker.herokuapp.com";
 
+jest.setTimeout(20000);
+
 describe("GET /booking/", () => {
     it("Deve listar as reservas, criar uma nova, buscar pelo ID e printar", async () => {
         // 1. Faz o GET geral para listar os IDs de reservas existentes
