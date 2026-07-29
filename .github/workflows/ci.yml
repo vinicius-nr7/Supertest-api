@@ -1,4 +1,4 @@
-name: CI
+name: Run Tests PR - PUSH
 
 on:
   push:
