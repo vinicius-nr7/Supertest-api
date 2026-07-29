@@ -16,6 +16,14 @@ Ele usa o Jest como framework de testes e o Supertest para simular requisições
 
 - `tests/` — arquivos de teste com as suites do Jest
 
+## Integração contínua
+
+Este projeto inclui uma workflow GitHub Actions em `.github/workflows/ci.yml`.
+A pipeline executa automaticamente em `push` e `pull_request` na branch `main` e realiza:
+
+- `npm install`
+- `npm test`
+
 ## Objetivo
 
 Garantir que a API de reservas se comporte corretamente em cenários reais, validando tanto a criação quanto a gestão de reservas via endpoints HTTP.
